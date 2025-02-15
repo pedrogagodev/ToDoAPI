@@ -1,11 +1,11 @@
 meta {
-  name: List tasks
+  name: Delete task
   type: http
-  seq: 3
+  seq: 4
 }
 
-get {
-  url: http://localhost:3333/tasks
+delete {
+  url: http://localhost:3333/tasks/
   body: json
   auth: none
 }
