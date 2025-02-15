@@ -1,0 +1,18 @@
+meta {
+  name: Update task
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:3333/tasks/723a1e2d-262e-4fb3-8b93-85e0c9dd9c85
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "taskUpdated",
+    "description": "taskUpdatedDescription"
+  }
+}
