@@ -24,7 +24,9 @@ export const routes = [
 				id: randomUUID(),
 				title,
 				description,
+				completed_at: null,
 				created_at: new Date().toLocaleDateString(),
+				updated_at: new Date().toLocaleDateString(),
 			};
 
 			database.insert("tasks", task);
